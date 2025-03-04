@@ -1,0 +1,146 @@
+.list-product {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    min-height: 100vh;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-product h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+}
+
+.listproduct-format-main p {
+    color: #454545;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listproduct-allproducts {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.listproduct-allproducts hr {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+.listproduct-format-main.list {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+.listproduct-product-icon {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.listproduct-remove-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.listproduct-remove-icon:hover {
+    opacity: 1;
+}
+
+/* Custom scrollbar */
+.listproduct-allproducts::-webkit-scrollbar {
+    width: 8px;
+}
+
+.listproduct-allproducts::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.listproduct-allproducts::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* Title styles */
+.listproduct-format-main .title {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Price styles */
+.listproduct-format-main .old-price,
+.listproduct-format-main .new-price {
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Category styles */
+.listproduct-format-main .category {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media(max-width: 1200px) {
+    .list-product {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .listproduct-format-main {
+        gap: 10px;
+    }
+}
+
+@media(max-width: 800px) {
+    .list-product {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .listproduct-format-main {
+        font-size: 14px;
+        gap: 5px;
+        grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.5fr;
+    }
+
+    .listproduct-product-icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .listproduct-remove-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .list-product h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,157 @@
+.offer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+
+.offer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.offer-left h1 {
+    color: #171717;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.offer-left p {
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.offer-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #4b0829;
+    border: none;
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offer-left button:hover {
+    background: #630b37;
+}
+
+.offer-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+.offer-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles for different screen sizes */
+
+/* For screens 1280px and above */
+@media (max-width: 1280px) {
+    .offer-left h1 {
+        font-size: 55px; /* Slightly reduced heading size */
+    }
+
+    .offer-left p {
+        font-size: 20px; /* Adjusted paragraph font size */
+    }
+
+    .offer-left button {
+        width: 260px; /* Adjust button width */
+        height: 65px; /* Adjust button height */
+        font-size: 20px; /* Adjust button text size */
+    }
+}
+
+/* For screens 1024px and above */
+@media (max-width: 1024px) {
+    .offer {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center-align content */
+        height: auto; /* Adjust height for stacking */
+    }
+
+    .offer-left {
+        align-items: center; /* Center align for vertical layout */
+    }
+
+    .offer-right {
+        justify-content: center; /* Center image in the stack */
+        padding-top: 30px;
+    }
+
+    .offer-left h1 {
+        font-size: 50px; /* Adjust heading size */
+    }
+
+    .offer-left p {
+        font-size: 18px; /* Adjust paragraph size */
+    }
+
+    .offer-left button {
+        width: 240px; /* Reduce button size */
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+/* For screens 800px and above */
+@media (max-width: 800px) {
+    .offer-left h1 {
+        font-size: 45px; /* Further reduce heading size */
+    }
+
+    .offer-left p {
+        font-size: 18px;
+    }
+
+    .offer-left button {
+        width: 220px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .offer-right img {
+        max-width: 90%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* For screens 500px and below */
+@media (max-width: 500px) {
+    .offer-left h1 {
+        font-size: 35px; /* Smaller heading for mobile */
+    }
+
+    .offer-left p {
+        font-size: 16px; /* Smaller paragraph for mobile */
+    }
+
+    .offer-left button {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .offer-right img {
+        max-width: 80%; /* Adjust image size further */
+    }
+}

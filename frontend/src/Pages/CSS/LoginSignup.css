@@ -1,0 +1,139 @@
+/* Container */
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.loginsignup-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Set fixed width */
+    text-align: center;
+}
+
+.loginsignup h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.loginsignup-fields input {
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.loginsignup-fields input:focus {
+    border: 1px solid #7d4cdb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.loginsignup button {
+    background-color: #d6096c;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.loginsignup button:hover {
+    background-color: #fa89de;
+}
+
+/* Login Link */
+.loginsignup-login {
+    color: #5c5c5c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginsignup-login span {
+    color: #ee36c3;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.loginsignup-login span:hover {
+    text-decoration: underline;
+}
+
+/* Agreement Section */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.loginsignup-agree input {
+    margin-right: 10px;
+}
+
+.loginsignup-agree p {
+    margin: 0;
+}
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+
+/* For screens 800px and below */
+@media (max-width: 800px) {
+    .loginsignup {
+        padding: 20px; /* Maintain padding around the section */
+    }
+
+    .loginsignup-container {
+        width: 400px; /* Fixed width */
+        padding: 40px; /* Keep original padding */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .loginsignup h1 {
+        font-size: 2rem; /* Keep original font size */
+    }
+
+    .loginsignup-fields input {
+        height: 50px; /* Maintain consistent input height */
+        font-size: 16px; /* Consistent font size */
+    }
+
+    .loginsignup button {
+        padding: 15px 20px; /* Keep original button padding */
+        font-size: 18px; /* Keep original button font size */
+    }
+
+    .loginsignup-agree {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align the text */
+    }
+}
+
+/* Additional media queries for smaller screens can be added as needed */

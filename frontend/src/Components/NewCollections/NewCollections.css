@@ -1,0 +1,166 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px; /* Adjusted height to auto */
+    padding: 20px; /* Add some padding to give space around the content */
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center; /* Ensures the heading is centered */
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    margin-bottom: 20px; /* Adds space after the hr */
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; /* Make it responsive, adjusting columns based on screen size */
+    gap: 30px;
+    justify-items: center; /* Ensures items are centered inside the grid cells */
+    margin-top: 50px;
+}
+
+.collections_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Reduced gap between images */
+    padding: 10px;
+}
+
+.collections_item .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 180px; /* Adjusted to a smaller width for uniform item size */
+}
+
+.new-collections .collections_item .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.collections_item .item .name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #171717;
+    margin: 10px 0;
+}
+
+.collections_item .item .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections_item .item .new_price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.collections_item .item .old_price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-decoration: line-through; /* Strikethrough effect for old prices */
+}
+@media (max-width: 1280px) {
+    .popular_item .item {
+        width: 200px; /* Slightly reduced width */
+    }
+
+    .popular h1 {
+        font-size: 45px; /* Adjust heading size */
+    }
+
+    .popular hr {
+        width: 180px;
+        height: 5px;
+    }
+}
+
+/* For screens 1024px and above */
+@media (max-width: 1024px) {
+    .popular_item .item {
+        width: 180px; /* Further reduced width */
+    }
+
+    .popular h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .popular hr {
+        width: 160px;
+        height: 4px;
+    }
+}
+
+/* For screens 800px and above */
+@media (max-width: 800px) {
+    .popular_item .item {
+        width: 150px; /* Reduced width */
+    }
+
+    .popular_item {
+        gap: 10px; /* Less gap between items */
+    }
+
+    .popular h1 {
+        font-size: 35px; /* Adjust heading size */
+    }
+
+    .popular hr {
+        width: 140px;
+        height: 4px;
+    }
+}
+
+/* For screens 500px and below */
+@media (max-width: 500px) {
+    .popular_item .item {
+        width: 130px; /* Further reduced width */
+    }
+
+    .popular_item {
+        gap: 8px; /* Smaller gap between items */
+    }
+
+    .popular h1 {
+        font-size: 30px; /* Smaller heading for mobile */
+    }
+
+    .popular hr {
+        width: 120px;
+        height: 3px;
+    }
+
+    .popular_item .item .name {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .popular_item .item .new_price {
+        font-size: 16px; /* Adjust price font size */
+    }
+
+    .popular_item .item .old_price {
+        font-size: 12px; /* Adjust old price font size */
+    }
+}
+
+

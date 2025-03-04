@@ -1,0 +1,53 @@
+/* Breadcrumb container */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px 150px;  /* Consistent margin */
+    font-size: 1rem;
+    color: #333;
+    gap: 10px;  /* Space between breadcrumb items */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+/* Style for each breadcrumb link */
+.breadcrumb a {
+    text-decoration: none;
+    color: #0066c0;  /* Link color */
+    transition: color 0.2s ease;
+}
+
+/* Hover effect for breadcrumb links */
+.breadcrumb a:hover {
+    color: #ff6600;  /* Hover color */
+}
+
+/* Breadcrumb separator */
+.breadcrumb-separator {
+    color: #999;
+}
+
+/* Responsive Design */
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .breadcrumb {
+        margin: 20px 50px;  /* Reduce margin for smaller screens */
+        font-size: 0.9rem;   /* Slightly smaller font size */
+    }
+}
+
+/* For screens 800px and below */
+@media (max-width: 800px) {
+    .breadcrumb {
+        margin: 20px 20px;  /* Further reduce margin */
+        font-size: 0.85rem;   /* Smaller font size */
+    }
+}
+
+/* For screens 500px and below */
+@media (max-width: 500px) {
+    .breadcrumb {
+        font-size: 0.8rem;   /* Smaller font size for very small screens */
+        margin: 10px 10px;  /* Minimum margin */
+    }
+}

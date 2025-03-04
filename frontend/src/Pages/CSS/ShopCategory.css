@@ -1,0 +1,82 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+
+.shopcategory-insertSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+}
+
+.shopcategory-insertSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 20px 50px; /* Reduced margins for better layout */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Reduced gap between items */
+    align-items: start; /* Align items to the top */
+}
+
+.shopcategory-products img {
+    width: 100%; /* Ensures the image fits within the container */
+    height: auto;
+    max-height: 300px; /* Set a max height for images */
+    object-fit: cover; /* Crop images to avoid distortion */
+    border-radius: 10px;
+}
+
+.shopcategory-products .product-card {
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 10px; /* Rounds the edges of the product card */
+}
+
+.shopcategory-products .product-card:hover {
+    transform: scale(1.05);
+}
+
+.shopcategory-products .product-details {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.shopcategory-products .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.shopcategory-products .new-price {
+    color: #070707;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 24px;
+    font-weight: 500;
+}
