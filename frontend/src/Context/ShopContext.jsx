@@ -16,7 +16,7 @@ const ShopContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(getDefaultCart());
     useEffect(()=>{
-fetch('http://localhost:4001/allproducts')
+fetch('https://hip-hop-backend.onrender.com')
 .then((response)=>response.json())
 .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
