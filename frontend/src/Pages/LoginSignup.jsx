@@ -38,7 +38,7 @@ else{
     const signup = async () => {
         console.log("Signup Function Executed", formData);
         let responseData;
-        await fetch('http://localhost:4001/signup',{
+        await fetch('https://hip-hop-backend.onrender.com/signup',{
           method:'POST',
           headers:{
             Accept:'application/form-data',
