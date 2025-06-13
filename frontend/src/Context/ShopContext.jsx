@@ -20,7 +20,7 @@ fetch('https://hip-hop-backend.onrender.com')
 .then((response)=>response.json())
 .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
-    fetch('http://localhost://4001/getcart',{
+    fetch('https://hip-hop-backend.onrender.com/getcart',{
         method:'POST',
         headers:{
             Accept:'application/form-data',
@@ -38,7 +38,7 @@ if(localStorage.getItem('auth-token')){
     const addToCart = (itemID) => {
         setCartItems((prev) => ({ ...prev, [itemID]: prev[itemID] + 1 }));
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4001/addtocart',{
+            fetch('https://hip-hop-backend.onrender.com/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -57,7 +57,7 @@ if(localStorage.getItem('auth-token')){
     const removeFromCart = (itemID) => {
         setCartItems((prev) => ({ ...prev, [itemID]: prev[itemID] > 0 ? prev[itemID] - 1 : 0 }));
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4001/removefromcart',{
+            fetch('https://hip-hop-backend.onrender.com/removefromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
